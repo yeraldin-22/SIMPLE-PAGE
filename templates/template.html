@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{{url_for('static',filename='/css/cabecera-styles.css')}}">
+   <link rel="stylesheet" href="{{url_for('static',filename='/css/pie-pagina-styles.css')}}">
+
+
+    <title>{%block title%}Template{% endblock %}</title>
+
+</head>
+<body>
+    <header></header>
+    <div class="contenedor-menu">
+        <h1>First Flask Frontend</h1>
+        <ul>
+            <li>
+                <a href="{{url_for('home')}}">Inicio</a>
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">Productos</a>
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">Servicios</a>
+            </li>
+            <li>
+                <a href="{{url_for('home')}}">Contactenos</a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        <h1>&copy;yeraldin2024</h1>
+    </footer>
+</body>
+</html>

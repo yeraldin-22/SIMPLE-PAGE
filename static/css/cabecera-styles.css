@@ -1,0 +1,43 @@
+*{
+
+    padding: 0px;
+    margin: 0px;
+}
+html { 
+    background-color: rgb(46, 158, 158);
+
+}
+.contenedor-menu{
+    height: 150px;
+    width: 80%;
+    background-color: rgb(19, 26, 29);
+    margin: 0 auto;
+
+}
+.contenedor-menu h1{ 
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 6px 6px 6px rgb(46, 202, 202);
+    line-height: 60px;
+}
+
+.contenedor-menu ul{
+    display: flex;
+    
+   
+}
+.contenedor-menu ul li{
+    list-style-type: none;
+    margin-left: 160px;
+    padding-top: 25px;
+}
+.contenedor-menu ul li a{
+padding-top: 10px;
+    text-decoration: none;
+}
+.contenedor-menu ul li a:hover{
+    font-size: 28px;
+    color:aquamarine;
+    background-color:blueviolet;
+}
+
